@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0E417D1D46301600F39033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E417C1D46301600F39033 /* AppDelegate.swift */; };
+		AA0E417F1D46301600F39033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E417E1D46301600F39033 /* ViewController.swift */; };
+		AA0E41821D46301600F39033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E41801D46301600F39033 /* Main.storyboard */; };
+		AA0E41851D46301600F39033 /* SwiftGirls4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA0E41831D46301600F39033 /* SwiftGirls4.xcdatamodeld */; };
+		AA0E41871D46301600F39033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0E41861D46301600F39033 /* Assets.xcassets */; };
+		AA0E418A1D46301600F39033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E41881D46301600F39033 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0E41791D46301600F39033 /* SwiftGirls4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGirls4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0E417C1D46301600F39033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0E417E1D46301600F39033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA0E41811D46301600F39033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA0E41841D46301600F39033 /* SwiftGirls4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftGirls4.xcdatamodel; sourceTree = "<group>"; };
+		AA0E41861D46301600F39033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0E41891D46301600F39033 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA0E418B1D46301600F39033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0E41761D46301600F39033 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0E41701D46301600F39033 = {
+			isa = PBXGroup;
+			children = (
+				AA0E417B1D46301600F39033 /* SwiftGirls4 */,
+				AA0E417A1D46301600F39033 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0E417A1D46301600F39033 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E41791D46301600F39033 /* SwiftGirls4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0E417B1D46301600F39033 /* SwiftGirls4 */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E417C1D46301600F39033 /* AppDelegate.swift */,
+				AA0E417E1D46301600F39033 /* ViewController.swift */,
+				AA0E41801D46301600F39033 /* Main.storyboard */,
+				AA0E41861D46301600F39033 /* Assets.xcassets */,
+				AA0E41881D46301600F39033 /* LaunchScreen.storyboard */,
+				AA0E418B1D46301600F39033 /* Info.plist */,
+				AA0E41831D46301600F39033 /* SwiftGirls4.xcdatamodeld */,
+			);
+			path = SwiftGirls4;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0E41781D46301600F39033 /* SwiftGirls4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0E418E1D46301600F39033 /* Build configuration list for PBXNativeTarget "SwiftGirls4" */;
+			buildPhases = (
+				AA0E41751D46301600F39033 /* Sources */,
+				AA0E41761D46301600F39033 /* Frameworks */,
+				AA0E41771D46301600F39033 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftGirls4;
+			productName = SwiftGirls4;
+			productReference = AA0E41791D46301600F39033 /* SwiftGirls4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0E41711D46301600F39033 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Penguin;
+				TargetAttributes = {
+					AA0E41781D46301600F39033 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AA0E41741D46301600F39033 /* Build configuration list for PBXProject "SwiftGirls4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0E41701D46301600F39033;
+			productRefGroup = AA0E417A1D46301600F39033 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0E41781D46301600F39033 /* SwiftGirls4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0E41771D46301600F39033 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0E418A1D46301600F39033 /* LaunchScreen.storyboard in Resources */,
+				AA0E41871D46301600F39033 /* Assets.xcassets in Resources */,
+				AA0E41821D46301600F39033 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0E41751D46301600F39033 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0E417F1D46301600F39033 /* ViewController.swift in Sources */,
+				AA0E41851D46301600F39033 /* SwiftGirls4.xcdatamodeld in Sources */,
+				AA0E417D1D46301600F39033 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA0E41801D46301600F39033 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA0E41811D46301600F39033 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA0E41881D46301600F39033 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA0E41891D46301600F39033 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA0E418C1D46301600F39033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0E418D1D46301600F39033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0E418F1D46301600F39033 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftGirls4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dosmanthus.SwiftGirls4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA0E41901D46301600F39033 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftGirls4/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dosmanthus.SwiftGirls4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0E41741D46301600F39033 /* Build configuration list for PBXProject "SwiftGirls4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0E418C1D46301600F39033 /* Debug */,
+				AA0E418D1D46301600F39033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0E418E1D46301600F39033 /* Build configuration list for PBXNativeTarget "SwiftGirls4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0E418F1D46301600F39033 /* Debug */,
+				AA0E41901D46301600F39033 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA0E41831D46301600F39033 /* SwiftGirls4.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA0E41841D46301600F39033 /* SwiftGirls4.xcdatamodel */,
+			);
+			currentVersion = AA0E41841D46301600F39033 /* SwiftGirls4.xcdatamodel */;
+			path = SwiftGirls4.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA0E41711D46301600F39033 /* Project object */;
+}

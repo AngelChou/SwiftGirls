@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftGirls4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B612-2015-02-01-10-48-45" translatesAutoresizingMaskIntoConstraints="NO" id="s7X-7e-quH">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AutoLayout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-ok-kTa">
+                                <rect key="frame" x="424" y="266" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Girl 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXi-K7-1t0">
+                                <rect key="frame" x="92" y="266" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know me more..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-Dp-Ue5">
+                                <rect key="frame" x="236" y="435" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, I'm Angel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ror-s7-HwT">
+                                <rect key="frame" x="252" y="144" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s7X-7e-quH" firstAttribute="leading" secondItem="HXi-K7-1t0" secondAttribute="trailing" constant="4" id="8Ws-qG-BJV"/>
+                            <constraint firstItem="jJw-Dp-Ue5" firstAttribute="top" secondItem="s7X-7e-quH" secondAttribute="bottom" constant="15" id="Ar4-FP-8bG"/>
+                            <constraint firstItem="yzX-ok-kTa" firstAttribute="leading" secondItem="s7X-7e-quH" secondAttribute="trailing" constant="4" id="Bp2-3s-Ohm"/>
+                            <constraint firstItem="s7X-7e-quH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C4Z-tr-fVd"/>
+                            <constraint firstItem="s7X-7e-quH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="ITT-lI-r9D"/>
+                            <constraint firstItem="HXi-K7-1t0" firstAttribute="top" secondItem="s7X-7e-quH" secondAttribute="bottom" constant="-154" id="LVJ-zv-rnC"/>
+                            <constraint firstItem="jJw-Dp-Ue5" firstAttribute="leading" secondItem="s7X-7e-quH" secondAttribute="trailing" constant="-184" id="Oyq-ZN-bwo"/>
+                            <constraint firstItem="s7X-7e-quH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TdZ-du-ZaX"/>
+                            <constraint firstItem="jJw-Dp-Ue5" firstAttribute="top" secondItem="s7X-7e-quH" secondAttribute="bottom" constant="49.5" id="VV5-a2-a7R"/>
+                            <constraint firstItem="s7X-7e-quH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="pYP-jl-7P1"/>
+                            <constraint firstItem="yzX-ok-kTa" firstAttribute="top" secondItem="s7X-7e-quH" secondAttribute="bottom" constant="-154" id="qK7-bE-3sY"/>
+                            <constraint firstItem="s7X-7e-quH" firstAttribute="top" secondItem="ror-s7-HwT" secondAttribute="bottom" constant="15" id="qNN-gU-69w"/>
+                            <constraint firstItem="jJw-Dp-Ue5" firstAttribute="centerX" secondItem="s7X-7e-quH" secondAttribute="centerX" id="rRP-yq-aLh"/>
+                            <constraint firstItem="ror-s7-HwT" firstAttribute="centerX" secondItem="s7X-7e-quH" secondAttribute="centerX" id="xNx-Uz-Nea"/>
+                            <constraint firstItem="jJw-Dp-Ue5" firstAttribute="centerY" secondItem="s7X-7e-quH" secondAttribute="centerY" id="xYU-CD-Bek"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VV5-a2-a7R"/>
+                                <exclude reference="xYU-CD-Bek"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-117"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7UR-8K-Kjz">
+            <objects>
+                <viewController id="hha-FG-MY8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WuA-bf-WRZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="j8E-sp-dbn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zAs-vR-ZL3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B612-2015-02-01-10-48-45" translatesAutoresizingMaskIntoConstraints="NO" id="atg-CM-U62">
+                                <rect key="frame" x="30" y="30" width="540" height="540"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="atg-CM-U62" firstAttribute="centerY" secondItem="zAs-vR-ZL3" secondAttribute="centerY" id="CPS-EL-Kgj"/>
+                            <constraint firstItem="atg-CM-U62" firstAttribute="height" secondItem="zAs-vR-ZL3" secondAttribute="height" multiplier="0.9" id="XVo-Vb-6xY"/>
+                            <constraint firstItem="atg-CM-U62" firstAttribute="centerX" secondItem="zAs-vR-ZL3" secondAttribute="centerX" id="xfO-Uq-39j"/>
+                            <constraint firstItem="atg-CM-U62" firstAttribute="width" secondItem="zAs-vR-ZL3" secondAttribute="width" multiplier="0.9" id="xhB-ct-UNl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyf-yA-Wsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="-101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="B612-2015-02-01-10-48-45" width="1080" height="1440"/>
+    </resources>
+</document>
