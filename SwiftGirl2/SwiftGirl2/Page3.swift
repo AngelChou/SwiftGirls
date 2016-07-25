@@ -13,7 +13,7 @@ class Page3: UIViewController {
     @IBOutlet weak var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let address = "https://www.google.com.tw"
+        let address = "https://github.com/AngelChou"
         let url = NSURL(string: address)
         let request = NSURLRequest(URL: url!)
         self.webView.loadRequest(request)
