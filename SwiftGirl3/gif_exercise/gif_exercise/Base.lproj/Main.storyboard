@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gif_exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-P1-Wex">
+                                <rect key="frame" x="-5" y="160" width="331" height="229"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FfI-P1-Wex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0xb-OK-riG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FfI-P1-Wex" secondAttribute="bottom" constant="179" id="R2z-n2-NGh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FfI-P1-Wex" secondAttribute="trailing" constant="-22" id="eEW-ZZ-eNf"/>
+                            <constraint firstItem="FfI-P1-Wex" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-21" id="lqs-mE-iy3"/>
+                            <constraint firstItem="FfI-P1-Wex" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="pad-7F-v3q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="FfI-P1-Wex" id="13T-5G-lkn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4" width="1920" height="1200"/>
+    </resources>
+</document>
