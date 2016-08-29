@@ -1,16 +1,15 @@
 # Swift Girls (ios)
 ---
-## Fackbook:
-https://www.facebook.com/groups/1260405513988915/
+## Resources:
+- [Facebook](https://www.facebook.com/groups/1260405513988915/)
+- [Github](https://github.com/Avonee/swift-girls-meetig_teaching)
 
-## Github 
-https://github.com/Avonee/swift-girls-meetig_teaching
-
-## PPT:
+## Meetup
 ### 20160520
-http://www.slideshare.net/ssuser6c934d/swift-girls-1stteachingmeeting20160520
+- [Slides](http://www.slideshare.net/ssuser6c934d/swift-girls-1stteachingmeeting20160520)
+
 ### 20160607 First iOS App @5xRuby
-http://www.slideshare.net/ssuser6c934d/swift-girls-2ndteachingmeeting20160607
+- [Slides](http://www.slideshare.net/ssuser6c934d/swift-girls-2ndteachingmeeting20160607)
 - 版面配置 & 宣告
   - Page 1
   ```
@@ -87,7 +86,7 @@ override func viewDidLoad(){
   - 手機設定“信任”
 
 ### 20160630 PlayGround and GIF @Mozilla
-http://www.slideshare.net/ssuser6c934d/swift-girls-3rdteachingmeeting20160630
+- [Slides](http://www.slideshare.net/ssuser6c934d/swift-girls-3rdteachingmeeting20160630)
 - Play ground
   - Conditional Statements
     - if (if...else...)
@@ -118,8 +117,10 @@ override func viewDidLoad(){
 }
 ```
 ### 20160725 AutoLayout @ALPHA Camp
-http://www.slideshare.net/ssuser6c934d/swift-girls-4thteachingmeeting20160725-64098671
+- [Slides](http://www.slideshare.net/ssuser6c934d/swift-girls-4thteachingmeeting20160725-64098671)
 - 排版定位：設定x, y, width, height
 - 上下左右分別是：Top, Buttom, Leading, Trailing
 - 實作
-#### 2016 TableView and firebase @
+
+### 20160829 TableView @Luster
+- [Slides](http://www.slideshare.net/ssuser6c934d/swift-girls-5thteachingmeeting20160829)
