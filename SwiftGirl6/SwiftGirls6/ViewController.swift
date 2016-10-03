@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sendButton: UIButton!
     
     var ref: FIRDatabaseReference!
+    var name = ""
     
     @IBAction func sendButtonClick(sender: AnyObject) {
         ref = FIRDatabase.database().reference()
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
         
         //寫入名字和對話
         let key = ref.child("chat").childByAutoId().key
-        let post = ["name": "Angel", "say": textInput.text!]
+        let post = ["name": name, "say": textInput.text!]
         
         //另一種顯示更新項目的寫法
         //let childUpdates = ["/chat/\(key)": post, "/user-chat/\("Avon")/\(key)/": post]
