@@ -4,11 +4,10 @@
 - [Facebook](https://www.facebook.com/groups/1260405513988915/)
 - [Github](https://github.com/Avonee/swift-girls-meetig_teaching)
 
-## Meetup
-### 20160520
+## Meetup 20160520
 - Slides: [First iOS App](http://www.slideshare.net/ssuser6c934d/swift-girls-1stteachingmeeting20160520)
 
-### 20160607 First iOS App @5xRuby
+## Meetup 20160607 First iOS App @5xRuby
 - Slides: [First iOS App(Review)](http://www.slideshare.net/ssuser6c934d/swift-girls-2ndteachingmeeting20160607)
 - 版面配置 & 宣告
   - Page 1
@@ -85,7 +84,7 @@ override func viewDidLoad(){
   - 產生開發憑證
   - 手機設定“信任”
 
-### 20160630 PlayGround and GIF @Mozilla
+## Meetup 20160630 PlayGround and GIF @Mozilla
 - Slide: [神奇語法PLAYGROUND遊樂園](http://www.slideshare.net/ssuser6c934d/swift-girls-3rdteachingmeeting20160630)
 - Play ground
   - Conditional Statements
@@ -116,13 +115,13 @@ override func viewDidLoad(){
     gif_image.startAnimating()
 }
 ```
-### 20160725 AutoLayout @ALPHA Camp
+## Meetup 20160725 AutoLayout @ALPHA Camp
 - Slide: [⼋歲都能聽懂的AutoLayout](http://www.slideshare.net/ssuser6c934d/swift-girls-4thteachingmeeting20160725-64098671)
 - 排版定位：設定x, y, width, height
 - 上下左右分別是：Top, Buttom, Leading, Trailing
 - 實作
 
-### 20160829 TableView @Luster
+## Meetup 20160829 TableView @Luster
 - Slide: [跟著TableView魔⿁的步伐滑滑滑](http://www.slideshare.net/ssuser6c934d/swift-girls-5thteachingmeeting20160829)
 - Protocols of TableView
   - UITableViewDataSource: 處理要放進TableView的data
@@ -196,3 +195,77 @@ override func viewDidLoad(){
         return cell
     }
     ```
+## Meetup 20161003 Firebase @CIT
+- Slide: [Firebase X Chatroom 最後大進擊!](http://www.slideshare.net/ssuser6c934d/swift-girls-6thteachingmeeting20160926)
+- Firebase
+  - 關聯式資料庫
+  - NoSQL，採用hash table的方式儲存資料(即key-value)
+- 實作
+  - Xcode建立新project  
+  - Firebase註冊登入
+  - 建立Firebase新專案: 專案名稱、國家地區
+  - 將Firebase加入到iOS設定
+    - iOS繫結ID(輸入project的Bundle Identifier)
+    - 將GoogleService-info.plist放入project
+    - 安裝cocoa pods 
+      - 第一次使用需要先安裝gem: `sudo gem install cocoapods`
+      - 進入project folder: `cd [your-project-directory]`
+      - 初始化pod: `pod init`
+      - 在Podfile中加入 `pod 'Firebase'`後install: `pod install`
+    - 在AppDelegate.swift中加入`import Fireabse` `FIRApp.configure()`
+  - 更改Firebase允許權限
+    - Database -> rules -> ".read": true, ".write": true -> 發布
+  - 關閉Xcode，重新以.xcworkspace開啟project
+  - Main.storyboard設計chatroom layout
+    - TextView 顯示對話框
+    - TextField 對話輸入框
+    - Button 訊息送出按鈕
+  - 安裝Firebase Database
+    - 在Podfile中加入 `pod 'Firebase/Database'`後install: `pod install`
+    - 在ViewController.swift中加入 `import FirebaseDatabase`
+    - 在ViewController class內宣告databaseReference: `var ref: FIRDatabaseReference!`
+  - 寫入Database: .Write
+  ```swift
+  @IBAction func okButtonClick(sender: AnyObject) {
+        ref = FIRDatabase.database().reference()     
+//      ref.child("chat").setValue(["name": "Avon","say": textInput.text!])
+        
+        //寫入名字和對話
+        let key = ref.child("chat").childByAutoId().key
+        let post = ["name": "\(self.nameGet!)",
+                    "say": textInput.text!]
+        
+        //另一種顯示更新項目的寫法
+//      let childUpdates = ["/chat/\(key)": post, "/user-chat/\("Avon")/\(key)/": post]
+//      let childUpdates = ["/chat/\(key)": post]
+        let childUpdates = ["\(key)": post]
+        
+        FIRDatabase.database().reference().updateChildValues(childUpdates)
+    }
+    ```
+  - 讀取Database: .Read
+  ```swift
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        //.Read 讀取
+         _ = FIRDatabase.database().reference().observeEventType(.ChildAdded, withBlock: { (snapshot) in
+         
+            //如果是有資料的狀況
+            if snapshot.value != nil{
+                
+                //讀取名字
+                let getName = snapshot.value!.objectForKey("name") as! String
+                //讀取對話
+                let getSay = snapshot.value!.objectForKey("say") as! String
+                //顯示名字＋對話 全部內容
+                self.showTalk.text = self.showTalk.text + "\(getName)" + " : " + "\(getSay)" + "\n"
+                //當完成以上動作之後, 就清空剛填寫的對話欄,這樣即可立即在空的對話欄內再次輸入想說的話
+                self.textInput.text = ""
+            }
+        })      
+    }
+  ```
+   
+    
+  
